@@ -1,0 +1,52 @@
+
+.popularproduct {
+    width: 90%;
+    margin-top: 60px;
+}
+
+.popularproducts {
+    margin-bottom: 50px;
+    display: flex; /* word gebruikt om aan te duiden dat we flex gebruiken */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--white);
+
+}
+
+.popularproducts a:hover img {
+    transform: scale(1.02);
+}
+
+.popularproductstitle {
+    display: inline-block; /* dit zorgt ervoor dat het niet op een nieuwe lijn start */
+    position: absolute; /* dit zorgt ervoor dat de titel zijn positie behoud desondanks dat er andere elementen op die positie worden weergeven */
+}
+
+.article {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.titelsindex {
+    border-style: groove;
+    background-color: var(--white);
+    justify-content: center;
+}
+
+.recenties {
+    margin-top: 100px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns:  0.5fr 1fr 1fr 1fr;
+    border-style: groove;
+
+}
+
+.recentiebreedte {
+    width: 50%;
+}
+
+.titelrecenties {
+    margin-top: -50px; /* zorgen dat de titel erboven komt*/
+}

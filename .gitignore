@@ -1,0 +1,11 @@
+# IDEs
+**/.idea/
+**/.vs/
+
+# auto-validator
+**/auto-validation/
+**/auto-validation.bat
+**/auto-validation.sh
+
+# MacOS
+**/.DS_Store

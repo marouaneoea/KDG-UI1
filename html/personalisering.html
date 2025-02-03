@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <link href="../media/logo.ico" rel="icon" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>VeryShirts</title>
+    <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Helvetica" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
+    <link href="/css/site.css" rel="stylesheet">
+    <link href="/css/personalisering.css" rel="stylesheet">
+    <script defer src="../script/form_validation.js"></script>
+    <script defer src="../script/dyn_data.js"></script>
+    <script defer src="../script/dyn_form.js"></script>
+
+
+</head>
+<body>
+<h1 class="hiddentitle">Personalisering</h1>
+<header class="header">
+    <a href="../index.html"><img alt="Logo" id="logo" src="../media/logo.png"></a>
+    <nav class="menu">
+        <h2 class="hiddentitle">Menu</h2>
+        <ul>
+            <li><a href=../index.html>Home</a></li>
+            <li class="hasDropdown"><a href="products.html">Producten</a>
+                <ul class="submenu">
+                    <li><a href="products.html#men">Men</a></li>
+                    <li><a href="products.html#women">Women</a></li>
+                    <li><a href="products.html#kids">Kids</a></li>
+                    <li><a href="../index.html#popularproducts">Populair Producten</a></li>
+                </ul>
+            </li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li id="actief"><a href="personalisering.html">Personalisering</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <h2 class="titelpersonalisering">Personalisering Eigen T-Shirt</h2>
+        <form action="bevestiging.html" id="form" method="get">
+            <div class="Gegevens">
+                <fieldset>
+                    <legend>Je gegevens</legend>
+                    <label for="voornaam">Voornaam: </label>
+                    <input class="naam" id="voornaam" name="voornaam" placeholder="Uw voornaam" required size="50"
+                           type="text">
+                    <p id="errorvoornaam"></p>
+
+                    <label for="achternaam">Achternaam: </label>
+                    <input class="naam" id="achternaam" name="achternaam" placeholder="Uw achternaam" required size="50"
+                           type="text">
+                    <p id="errorachternaam"></p>
+                    <label for="email">Je Emailadres: </label>
+                    <input id="email" name="email" placeholder="Uw email" required type="email">
+                    <p id="no-email"><b>⚠Foute email </b></p>
+                    <label for="telefoonnummer">Je telefoonnummer: </label>
+                    <input id="telefoonnummer" name="telefoonnummer" pattern="^0?[1-9][0-9]{7,8}$"
+                           placeholder="ex. (0465008574)" required type="tel">
+                    <label for="postcode">Geef uw postcode: </label>
+                    <input id="postcode" minlength="4" name="postcode" pattern="[0-9]{4}" placeholder="ex. (2800)"
+                           required>
+                    <p id="errorpostcode"></p>
+                    <label for="PIN">Geef uw eigen PIN code voor vertificatie: </label>
+                    <input id="PIN" name="PIN" placeholder="ex. (0000)" required size="4">
+                    <p id="errorPIN"></p>
+                </fieldset>
+                <fieldset class="keuze">
+                    <legend>Selecteer een product</legend>
+
+                    <select name="keuze" id="product-selectie" required>
+                        <option disabled selected value="">Kies een shirt:</option>
+
+                    </select>
+                </fieldset>
+                <fieldset class="personalisering">
+                    <legend>Personalisering T-Shirt</legend>
+                    <div id="radios">
+
+                    </div>
+                    <label for="maat">Kies uw maat: </label>
+                    <select id="maat" name="maat">
+                        <option disabled selected value="">Kies een maat:</option>
+                        <optgroup label="Kindermaten">
+                            <option value="134/140">134/140</option>
+                            <option value="146/152">146/152</option>
+                            <option value="158/164">158/164</option>
+                            <option value="170/176">170/176</option>
+                        </optgroup>
+                        <optgroup label="Volwassenmaten">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </optgroup>
+
+                    </select>
+                </fieldset>
+                <fieldset class="extras">
+
+                    <legend>Extra's</legend>
+                    <p>Indien u een design wilt op onze T-Shirts, gelieve het design in PNG hieronder up te loaden</p>
+                    <label for="design">Gelieve hier het design up te loaden </label>
+                    <input id="design" name="design" type="file">
+
+                </fieldset>
+                <div class="button">
+                    <button id="button" type="submit">Verzenden</button>
+                </div>
+                <p id="button-code"></p>
+            </div>
+        </form>
+    </section>
+</main>
+<footer>
+    <p id="footertext">@Copyright Marouane 2022- All Right Reserved.
+    <p>
+</footer>
+</body>
+</html>

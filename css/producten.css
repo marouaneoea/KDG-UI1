@@ -1,0 +1,97 @@
+h2 {
+    padding-bottom: 15px;
+}
+
+img {
+    max-height: 100%;
+    min-width: 80%;
+    object-fit: cover;
+    vertical-align: bottom;
+
+}
+
+#men {
+    background-color: var(--white);
+    margin-top: 50px;
+    display: grid; /* aantonen dat we dit laten zien in de vorm van een grid*/
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.categorietitel {
+    grid-column: 1/5
+}
+
+.producten a:hover img {
+    transform: scale(1.02);
+    background-color: var(--main-color);
+}
+
+#women {
+    background-color: var(--white);
+    margin-top: 100px;
+    display: grid; /* aantonen dat we dit laten zien in de vorm van een grid*/
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+#kids {
+    background-color: var(--white);
+    margin-top: 100px;
+    display: grid; /* aantonen dat we dit laten zien in de vorm van een grid*/
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.producten {
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.producten input {
+    display: none;
+
+}
+
+.producten label {
+    margin-top: 30px;
+    margin-bottom: 8px;
+    padding: 4px 16px;
+    justify-content: space-between;
+    background-color: var(--tart-orange);
+    border-radius: 5px;
+    color: white;
+}
+
+.producten input:checked + label {
+    background-color: var(--cornflower-blue);
+}
+
+input#Thermal:checked ~ article section:not(.thermal) {
+    display: none;
+}
+
+input#Synthetic:checked ~ article section:not(.synthetic) {
+    display: none;
+}
+
+input#Cotton:checked ~ article section:not(.cotton) {
+    display: none;
+}
+
+input#Polyester:checked ~ article section:not(.polyester) {
+    display: none;
+}
+
+input#all:checked ~ article section:not(.all) {
+    display: none;
+}
+
+.producten label:hover {
+    background-color: var(--cornflower-blue);
+}
+
+

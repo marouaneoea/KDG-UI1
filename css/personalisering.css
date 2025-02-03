@@ -1,0 +1,110 @@
+.Gegevens {
+    margin: 10px auto;
+    max-width: 600px;
+    padding: 20px 12px 10px 20px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#voornaam {
+    width: 100%;
+}
+
+#achternaam {
+    width: 100%;
+}
+
+#email {
+    width: 100%;
+}
+
+#telefoonnummer {
+    width: 100%;
+}
+
+.Gegevens label {
+    margin: 0 0 3px 0;
+    padding: 0;
+    display: block;
+    font-weight: bold;
+}
+
+.radios label {
+    margin-top: 30px;
+    margin-bottom: 8px;
+    padding: 4px 16px;
+    justify-content: space-between;
+    background-color: var(--tart-orange);
+    border-radius: 5px;
+    color: white;
+}
+
+.radios input {
+    display: none;
+
+}
+
+.radios {
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.radios input:checked + label {
+    background-color: var(--cornflower-blue);
+}
+
+.radios label:hover {
+    background-color: var(--cornflower-blue);
+}
+
+#button {
+    margin-top: 10px;
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    border: 0;
+}
+
+.Gegevens input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.titelpersonalisering {
+    margin-top: 10px;
+}
+
+#no-email {
+    display: none;
+    color: red;
+    background-color: var(--white);
+}
+
+select {
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+}

@@ -1,0 +1,33 @@
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 0 auto;
+    border-style: solid;
+}
+
+main {
+    text-align: center;
+    align-items: center;
+}
+
+th, td {
+    padding: 18px;
+
+}
+
+td {
+    width: 50%;
+}
+
+th {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.titelstabel {
+    background-color: var(--cornflower-blue);
+}
+
+.productfichetabel {
+    margin-bottom: 50px;
+}

@@ -1,0 +1,60 @@
+:root {
+    --cornflower-blue: #91a6ffff;
+    --persian-pink: #ff88dcff;
+    --laser-lemon: #faff7fff;
+    --white: #ffffffff;
+    --tart-orange: #ff5154ff;
+    --main-color: #e80c60;
+    --black: #000000;
+
+}
+
+.titelproduct {
+    grid-area: Titelproduct;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.productfoto {
+    border-style: dashed solid;
+    align-items: center;
+    grid-area: productfoto;
+}
+
+.eigenschappen {
+    border-style: groove;
+    margin-left: 50px;
+    grid-area: Eigenschappen;
+    list-style: none;
+}
+
+.omschrijving {
+    border-style: groove;
+    margin-left: 50px;
+    grid-area: Omschrijving;
+}
+
+.prijs {
+    margin-top: -210px; /* de positie van de prijs was niet goed dus daarom de negatieve waarde */
+    grid-area: Prijs;
+}
+
+.maat {
+    margin-top: -130px; /* de positie van de maat was niet goed dus daarom de negatieve waarde */
+    grid-area: Maat;
+}
+
+.article {
+    justify-items: start;
+    display: grid; /* aantonen dat we dit laten zien in de vorm van een grid*/
+    grid-template-columns: 1fr 1fr 1fr;
+
+    column-gap: 150px;
+    grid-template-areas:
+    ". Titelproduct ."
+    "Omschrijving productfoto ."
+    "Eigenschappen productfoto ."
+    ". . Prijs"
+    ". . Maat"
+
+}
