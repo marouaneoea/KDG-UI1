@@ -15,7 +15,7 @@ This project was developed for the **User Interfaces 1** course at **KDG Hogesch
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/537spaces/KDG-UI1.git
+   git clone https://github.com/marouaneoea/KDG-UI1.git
    ```
 2. **Navigate to the Project Directory**:
    ```bash
