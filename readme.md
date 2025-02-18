@@ -42,7 +42,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 For any questions or feedback, please reach out to:
 
-- **Email**: marouaneoea@gmail.com
+- **Email**: marouaneoea2@gmail.com
 
 ---
 
